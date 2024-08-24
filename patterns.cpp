@@ -11,10 +11,20 @@ void squarePattern(int n){
         cout << endl;
     }
 }
-
+void halfPyramid(int n){
+    for (int i=0; i<5; i++){
+        for(int j=0; j<=i; j++){
+            cout << " * ";
+        }
+        cout << endl;
+    }
+}
 int main(){
      int n;
     cin >> n;
     //calling square pattern function
     squarePattern(n);
+
+    //calling half pyramid pattern
+    halfPyramid(n);
 }
