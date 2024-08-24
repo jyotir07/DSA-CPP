@@ -62,23 +62,39 @@ void pyramid(int n){
         cout << endl;
     }
 }
+void reversePyramid(int n){
+    for(int i=0; i<n; i++){
+        //spaces
+        for(int j=0; j<i; j++){
+            cout << " ";
+        }
+        //stars
+        for(int k=0; k<2*n - (2*i + 1); k++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+
+}
 int main(){
      int n;
     cin >> n;
     //calling square pattern function
-    squarePattern(n);
+    // squarePattern(n);
 
     //calling half pyramid pattern
-    halfPyramid(n);
+    // halfPyramid(n);
 
     //calling reverse pyramid pattern
-    reverseHalfPyra(n);
+    // reverseHalfPyra(n);
 
     //calling half pyramid number pattern function
-    halfPyraNum(n);
+    // halfPyraNum(n);
 
     //calling pyramid pattern
-    pyramid(n);
+    // pyramid(n);
 
+    //calling reverse pyramid pattern
+    // reversePyramid(n);
     return 0;
 }
