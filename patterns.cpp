@@ -38,7 +38,7 @@ void halfPyraNum(int n){
     }
 
 }
-void reverseHalfPyra(int n){
+void reverseHalfPyra2(int n){
     for(int i=1; i<=n; i++){
         for(int j=0; j<n-i+1; j++){
             cout << " " << j << " ";
@@ -76,6 +76,20 @@ void reversePyramid(int n){
     }
 
 }
+
+void rightHalf(int n){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<i; j++){
+            cout << " * ";
+        }
+        cout << endl;
+        for(int k=0; k<n-i-1; k++){
+            cout << " * ";
+        }
+        cout << endl;
+    }
+
+}
 int main(){
      int n;
     cin >> n;
@@ -96,5 +110,8 @@ int main(){
 
     //calling reverse pyramid pattern
     reversePyramid(n);
+
+    //calling right half pyramid func
+    rightHalf(n);
     return 0;
 }
