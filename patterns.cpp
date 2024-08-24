@@ -80,21 +80,21 @@ int main(){
      int n;
     cin >> n;
     //calling square pattern function
-    // squarePattern(n);
+    squarePattern(n);
 
     //calling half pyramid pattern
-    // halfPyramid(n);
+    halfPyramid(n);
 
     //calling reverse pyramid pattern
-    // reverseHalfPyra(n);
+    reverseHalfPyra(n);
 
     //calling half pyramid number pattern function
-    // halfPyraNum(n);
+    halfPyraNum(n);
 
     //calling pyramid pattern
-    // pyramid(n);
+    pyramid(n);
 
     //calling reverse pyramid pattern
-    // reversePyramid(n);
+    reversePyramid(n);
     return 0;
 }
