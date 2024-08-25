@@ -90,6 +90,7 @@ void rightHalf(int n){
     }
 
 }
+//adding to show it to her
 int main(){
      int n;
     cin >> n;
