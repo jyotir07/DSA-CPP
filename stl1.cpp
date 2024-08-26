@@ -81,6 +81,38 @@ void stacks(){
     }
     
 }
+void priority_queue(){
+    // priority_queuee<int>pq;
+    pq.push(5);
+    pq.push(12);
+    pq.emplace(52); //{52, 12, 5}
+
+    cout << pq.top; //prints the top most element
+
+    pq.pop(); // pops the top most element (52)
+    
+    
+    //minimum heap
+    // priority_queuee<int, vector<int>, greater<int>> pq;
+    pq.push(2);
+    pq.push(5);
+    pq.push(7);
+    pq.push(17);
+    pq.emphase(21);
+
+    cout << pq.top(); //prints 2
+}
+void someSet(){
+    set<int> st;
+    st.insert(2);
+    st.insert(5);
+    st.insert(3);
+    st.emplace(69);
+
+    //sets store sorted and only unique values
+
+    auto it = st.find(5);
+}
 int main(){
     vectors();
 
