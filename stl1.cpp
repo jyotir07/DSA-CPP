@@ -56,9 +56,41 @@ void lists(){
     }
 }
 
+void stacks(){
+    //initiallizing a stack ds
+    stack<char> charStack; //initializations are similar to each other
+    charStack.push('a');
+    charStack.push('b');
+    charStack.push('c');
+    charStack.push('d');
+    charStack.push('e');
+    charStack.emplace('f');
+
+    //printing the top of the stack
+    cout << charStack.top() << endl;
+    charStack.pop(); // pops(deletes) the top most element from the stack
+
+    int size = charStack.size();
+    cout << size << endl;
+
+    if(charStack.empty() == 1){  // .empty function returns a boolean value (0,1)
+        cout << "true" << endl;
+    }
+    else{
+        cout << "false";
+    }
+    
+}
 int main(){
     vectors();
+
+    //lists are stored as doubly linkedlist hence
+    //lists gives the functionality to add and delete from the front
     lists();
+
+    //stack data structure follows LIFO 
+    //LIFO: Last In First Out
+    stacks();
     
     return 0;
 }
