@@ -81,27 +81,7 @@ void stacks(){
     }
     
 }
-void priority_queue(){
-    // priority_queuee<int>pq;
-    pq.push(5);
-    pq.push(12);
-    pq.emplace(52); //{52, 12, 5}
 
-    cout << pq.top; //prints the top most element
-
-    pq.pop(); // pops the top most element (52)
-    
-    
-    //minimum heap
-    // priority_queuee<int, vector<int>, greater<int>> pq;
-    pq.push(2);
-    pq.push(5);
-    pq.push(7);
-    pq.push(17);
-    pq.emphase(21);
-
-    cout << pq.top(); //prints 2
-}
 void someSet(){
     set<int> st;
     st.insert(2);
@@ -111,8 +91,19 @@ void someSet(){
 
     //sets store sorted and only unique values
 
-    auto it = st.find(5);
+    auto it = st.find(69);
+    cout << endl << *(it);
 }
+
+void maps(){
+    map <int, char> mapp;
+    map <int, pair<int, int>> mapp;
+    mapp[1] = 'f';
+    for(auto it : mapp){
+        cout << endl << it.first <<" " << it.second;
+    }
+}
+
 int main(){
     vectors();
 
@@ -123,6 +114,12 @@ int main(){
     //stack data structure follows LIFO 
     //LIFO: Last In First Out
     stacks();
+
+    //sets
+    someSet();
+
+    //maps are based on key-value pairs these can be anything and take up only linear time compleity 
+    maps();
     
     return 0;
 }
