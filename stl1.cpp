@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main(){
+void vectors(){
     //declaring a vector and its datatype
     vector <int> jyotirsVec;
 
@@ -38,5 +38,27 @@ int main(){
     for(auto it : jyotirsVec){
         cout << it << " ";
     }
+}
+
+void lists(){
+    //initiallizing a list
+    list<int> saddiList;
+
+    //adding elements in the list
+    saddiList.push_back(99);
+    saddiList.emplace_back(88); //adds to the end (faster way)
+
+    saddiList.emplace_front(100);
+
+    //printing the list using the simplest way
+    for(auto it : saddiList){
+        cout << it << " ";
+    }
+}
+
+int main(){
+    vectors();
+    lists();
+    
     return 0;
 }
