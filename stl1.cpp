@@ -100,7 +100,7 @@ void maps(){
     map <int, pair<int, int>> mapp;
     mapp[1] = 'f';
     for(auto it : mapp){
-        cout << endl << it.first <<" " << it.second;
+        cout << endl << it.first <<" " << it.second << endl;
     }
 }
 
@@ -120,6 +120,7 @@ int main(){
 
     //maps are based on key-value pairs these can be anything and take up only linear time compleity 
     maps();
+    //multimaps are maps where we can map multiple values to a single key
     
     return 0;
 }
